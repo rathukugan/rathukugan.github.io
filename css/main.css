@@ -1,43 +1,86 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    /* margin: 60px;
+    width: 70%; */
+    font-family: 'PT Sans', sans-serif;
+    background-color: #0F1108; /*#212020*/
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li{
+    display: inline;
+    /* padding-left: 50px; */
+    margin-right: 20px;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    font-weight: bold;
+    color: white;
+}
+.navbar .nav > li > a:hover {
+    float: none;
+    font-weight: bolder;
+    color: #30F5EA;
+}
+
+footer ul li{
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
-    color: #999;
+    color: #EDE8E8;
 }
-a:hover {
-    text-decoration: underline;
+
+a:hover{
+    font-weight: bolder;
+    color: #30F5EA;
 }
+
+.sliding { /* Credit to http://bradsknutson.com/blog/css-sliding-underline/ */
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 3px solid transparent;    
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    height: 25px;
+}
+.sliding:hover {
+    border-bottom: 3px solid #28EDD3;
+    width: 60px;
+}
+
+.darkshade{
+    background-color:#333333;
+}
+
 h1 {
+    margin-left: 25px;
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: white;
+    margin-left: 25px;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.jumbotron{
+    /*background-image: url('http://goo.gl/04j7Nn');*/
+    background-image: url(../images/test1.jpg);
+    height:400px;
 }
 
-ul.posts li {
-    list-style: none;
+#lower{
+    padding-top: 3px;
 }
